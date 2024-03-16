@@ -7,19 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.Api", "src\Tcc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B309074-0FA6-46E1-97E4-4A0393CDC4F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Identity.Application", "src\Tcc.Identity.Application\Tcc.Identity.Application.csproj", "{956E8BA3-797E-4DB5-96C2-8ABB4C24CCED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.Application", "src\Tcc.Identity.Application\Tcc.Identity.Application.csproj", "{956E8BA3-797E-4DB5-96C2-8ABB4C24CCED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Identity.Core", "src\Tcc.Identity.Core\Tcc.Identity.Core.csproj", "{9884E1B6-9464-420B-AD82-D8FA58AD38FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.Core", "src\Tcc.Identity.Core\Tcc.Identity.Core.csproj", "{9884E1B6-9464-420B-AD82-D8FA58AD38FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Identity.DataAccess", "src\Tcc.Identity.DataAccess\Tcc.Identity.DataAccess.csproj", "{7E4283CA-0ADC-460D-A5DD-8338761481C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.DataAccess", "src\Tcc.Identity.DataAccess\Tcc.Identity.DataAccess.csproj", "{7E4283CA-0ADC-460D-A5DD-8338761481C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{600DD34B-46A5-46FF-8D97-A062891779A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Identity.Shared", "src\Tcc.Identity.Shared\Tcc.Identity.Shared.csproj", "{514BA568-8A07-46E3-B037-6A0421A77ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.Shared", "src\Tcc.Identity.Shared\Tcc.Identity.Shared.csproj", "{514BA568-8A07-46E3-B037-6A0421A77ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Identity.Api.IntegrationTests", "tests\Tcc.Identity.Api.IntegrationTests\Tcc.Identity.Api.IntegrationTests.csproj", "{98628108-DF7B-490E-B6EF-19B3B335A85D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.Api.IntegrationTests", "tests\Tcc.Identity.Api.IntegrationTests\Tcc.Identity.Api.IntegrationTests.csproj", "{98628108-DF7B-490E-B6EF-19B3B335A85D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Identity.Application.UnitTests", "tests\Tcc.Identity.Application.UnitTests\Tcc.Identity.Application.UnitTests.csproj", "{18E4E45C-FEBC-417F-978E-CB8F9B71EB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.Identity.Application.UnitTests", "tests\Tcc.Identity.Application.UnitTests\Tcc.Identity.Application.UnitTests.csproj", "{18E4E45C-FEBC-417F-978E-CB8F9B71EB65}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{950190B0-BAC6-4112-A1B9-C08896DBFC87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{18E4E45C-FEBC-417F-978E-CB8F9B71EB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E4E45C-FEBC-417F-978E-CB8F9B71EB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E4E45C-FEBC-417F-978E-CB8F9B71EB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950190B0-BAC6-4112-A1B9-C08896DBFC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950190B0-BAC6-4112-A1B9-C08896DBFC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950190B0-BAC6-4112-A1B9-C08896DBFC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950190B0-BAC6-4112-A1B9-C08896DBFC87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
