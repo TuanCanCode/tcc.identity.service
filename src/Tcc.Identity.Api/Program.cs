@@ -1,3 +1,5 @@
+using Tcc.Identity.Application;
+using Tcc.Identity.DataAccess;
 
 namespace Tcc.Identity.Api
 {
@@ -20,6 +22,9 @@ namespace Tcc.Identity.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddApplication(builder.Configuration);
+            builder.Services.AddDataAccess(builder.Configuration);
 
             var app = builder.Build();
 
