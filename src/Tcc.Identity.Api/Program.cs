@@ -1,4 +1,5 @@
 using AutoWrapper;
+using Serilog;
 using Tcc.Identity.Api.Middleware;
 using Tcc.Identity.Application;
 using Tcc.Identity.DataAccess;
@@ -19,6 +20,12 @@ namespace Tcc.Identity.Api
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            // Config SeriLog
+            builder.Logging.ClearProviders();
+            builder.Logging.AddSerilog(new LoggerConfiguration()
+              .ReadFrom.Configuration(builder.Configuration)
+              .CreateLogger());
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
