@@ -1,3 +1,5 @@
+using AutoWrapper;
+using Tcc.Identity.Api.Middleware;
 using Tcc.Identity.Application;
 using Tcc.Identity.DataAccess;
 
@@ -35,13 +37,16 @@ namespace Tcc.Identity.Api
                 app.UseSwaggerUI();
             }
 
+            app.UseApiResponseAndExceptionWrapper();
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
 
-
             app.MapControllers();
 
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
+            
             app.Run();
         }
     }

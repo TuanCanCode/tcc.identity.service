@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-using Tcc.Identity.Api.Models;
+﻿using AutoWrapper.Wrappers;
 using Tcc.Identity.Application.Exceptions;
 using Tcc.Identity.Core.Exceptions;
 
@@ -58,11 +56,6 @@ public class ExceptionHandlingMiddleware
             _ => code
         };
 
-        var result = JsonSerializer.Serialize(ApiResult<string>.Failure(errors));
-
-        context.Response.ContentType = "application/json";
-        context.Response.StatusCode = code;
-
-        return context.Response.WriteAsync(result);
+        throw new ApiException(ex.Message, code);
     }
 }
