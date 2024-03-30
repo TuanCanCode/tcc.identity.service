@@ -8,13 +8,13 @@ namespace Tcc.Identity.Core.Entities
              /// Gets or sets the user name for this user.
              /// </summary>
         [StringLength(256)]
-        public virtual string UserName { get; set; }
+        public virtual required string UserName { get; set; }
 
         /// <summary>
         /// Gets or sets the email address for this user.
         /// </summary>
         [StringLength(256)]
-        public virtual string Email { get; set; }
+        public virtual required string Email { get; set; }
 
         /// <summary>
         /// Gets or sets a flag indicating if a user has confirmed their email address.
